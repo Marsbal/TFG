@@ -1916,7 +1916,7 @@ print(fig_s2_qc)
 ggsave("Figure_S2_QC_Distributions.png", fig_s2_qc, width = 8.5, height = 11, dpi = 300)
 ```
 
-# 17. Enrichment analysis
+## 17. Enrichment analysis
 
 ### 17.0 Analysis of the filtered proteins
 
