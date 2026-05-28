@@ -1918,7 +1918,7 @@ ggsave("Figure_S2_QC_Distributions.png", fig_s2_qc, width = 8.5, height = 11, dp
 
 # 17. Enrichment analysis
 
-## 17.0 Analysis of the filtered proteins
+### 17.0 Analysis of the filtered proteins
 
 ``` r
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -1967,7 +1967,7 @@ List for enrichment analysis
 entrez_ids <- unique(protein_mapping$ENTREZID)
 ```
 
-BIologicalProcesses
+#### BiologicalProcesses
 
 ``` r
 ego_bp <- enrichGO(
@@ -1980,7 +1980,7 @@ ego_bp <- enrichGO(
 )
 ```
 
-Cellular Components
+#### Cellular Components
 
 ``` r
 ego_cc <- enrichGO(
@@ -2277,7 +2277,7 @@ head(as.data.frame(reactome_res))
     ## R-HSA-112316    155
     ## R-HSA-6798695   172
 
-Dotplots
+#### Dotplots
 
 ``` r
 dotplot(ego_cc, showCategory = 15) +
@@ -2567,7 +2567,7 @@ library(clusterProfiler)
 library(org.Hs.eg.db)
 library(stringr)
 
-# --- 1. Calculate Fold Enrichment ---
+# 1. Calculate Fold Enrichment 
 # Converting GeneRatio and BgRatio from strings (e.g., "5/100") to numeric values
 top10_CC <- top10_CC_table %>%
   mutate(
@@ -2725,7 +2725,7 @@ ggplot(data_para_grafico, aes(x = originalRUN, y = LogIntensities, fill = GROUP)
 
 <img src="TFG_Mar_Mauri_files/figure-gfm/unnamed-chunk-63-1.png" alt="" style="display: block; margin: auto;" />
 
-## 19. Detailed abundance profiles for the top 10 cellular component ontologies**.**
+# 19. Detailed abundance profiles for the top 10 cellular component ontologies
 
 ``` r
 library(ggplot2)
