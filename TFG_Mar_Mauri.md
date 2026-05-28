@@ -2678,7 +2678,7 @@ print("Figure successfully generated and saved as GO_Enrichment_Abundance_Combin
 
     ## [1] "Figure successfully generated and saved as GO_Enrichment_Abundance_Combined.png"
 
-# 18. Data Preparation and Group Logic
+## 18. Data Preparation and Group Logic
 
 This block consolidates the group classification and synchronization
 with your previous ontology mapping.
@@ -2725,7 +2725,7 @@ ggplot(data_para_grafico, aes(x = originalRUN, y = LogIntensities, fill = GROUP)
 
 <img src="TFG_Mar_Mauri_files/figure-gfm/unnamed-chunk-63-1.png" alt="" style="display: block; margin: auto;" />
 
-# 19. Detailed abundance profiles for the top 10 cellular component ontologies
+## 19. Detailed abundance profiles for the top 10 cellular component ontologies
 
 ``` r
 library(ggplot2)
